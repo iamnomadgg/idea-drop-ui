@@ -71,6 +71,18 @@
         "ai"
       ],
       "createdAt": "2025-04-24T13:10:00.000Z"
+    },
+    {
+      "id": "c7b5",
+      "title": "GG's idea",
+      "summary": "GG",
+      "description": "GG",
+      "tags": [
+        "a",
+        "b",
+        "c"
+      ],
+      "createdAt": "2025-08-04T13:29:58.658Z"
     }
   ]
 }
