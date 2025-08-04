@@ -71,18 +71,6 @@
         "ai"
       ],
       "createdAt": "2025-04-24T13:10:00.000Z"
-    },
-    {
-      "id": "4aa4",
-      "title": "GG's Idea",
-      "summary": "GG",
-      "description": "GG",
-      "tags": [
-        "web",
-        "ai",
-        "machine learning"
-      ],
-      "createdAt": "2025-08-04T12:41:41.545Z"
     }
   ]
 }
