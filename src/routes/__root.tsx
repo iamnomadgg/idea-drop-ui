@@ -6,7 +6,7 @@ import {
 } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 import { QueryClient } from '@tanstack/react-query';
-import Header from '@/components/header';
+import Header from '@/components/Navbar';
 
 type RouterContext = {
   queryClient: QueryClient;
