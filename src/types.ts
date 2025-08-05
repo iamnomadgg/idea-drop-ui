@@ -1,5 +1,5 @@
 export type IdeaType = {
-  id: string;
+  _id: string;
   title: string;
   summary: string;
   description: string;

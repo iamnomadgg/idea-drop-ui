@@ -32,7 +32,7 @@ function IdeaEditPage() {
 
   const { mutateAsync, isPending } = useMutation({
     mutationFn: () =>
-      updateIdea(idea.id, {
+      updateIdea(idea._id, {
         title,
         summary,
         description,
