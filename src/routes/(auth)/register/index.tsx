@@ -30,6 +30,7 @@ function RegisterPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
     try {
       await mutateAsync({ name, email, password });
     } catch (err: any) {
