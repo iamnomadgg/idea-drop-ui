@@ -6,6 +6,7 @@ import {
   useEffect,
 } from 'react';
 import { refreshAccessToken } from '@/api/auth';
+import { setStoredAccessToken } from '@/lib/authToken';
 
 type AuthContextType = {
   accessToken: string | null;
@@ -26,12 +27,17 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         const { accessToken: newToken, user } = await refreshAccessToken();
         setAccessToken(newToken);
         setUser(user);
+        setStoredAccessToken(newToken);
       } catch (err: any) {
         console.log('Failed to refresh the access token: ', err);
       }
     };
     loadAuth();
   }, []);
+
+  useEffect(() => {
+    setStoredAccessToken(accessToken);
+  }, [accessToken]);
 
   return (
     <AuthContext.Provider
